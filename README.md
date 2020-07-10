@@ -12,7 +12,7 @@
 * UI
   * Configurar o arquivo 'config.ts'.
   
-  ## Considerações gerais
+## Considerações gerais
 
 * Objetivo
   * Este projeto nasceu a princípio para um desafio feito pela empresa Zoox Smart Data.
