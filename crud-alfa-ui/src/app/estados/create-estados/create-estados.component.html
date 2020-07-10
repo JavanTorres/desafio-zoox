@@ -1,0 +1,22 @@
+<h2>Cadastrar Estado</h2>
+
+<div>
+    <label>Nome:
+        <input placeholder="Insira o nome" [(ngModel)]="request.nome">
+    </label>
+    <br>
+    <label>Abreviação:
+        <input placeholder="Insira a Abreviação" [(ngModel)]="request.abreviacao">
+    </label>
+    <br>
+    <button (click)="save()">Gravar</button>
+</div>
+
+<br><br>
+
+<div *ngIf="estado">
+    <h3>Estado criado com sucesso!</h3>
+    <label>Nome: {{ estado.nome }}</label>
+    <br>
+    <label>Abreviação: {{ estado.abreviacao }}</label>
+</div>

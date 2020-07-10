@@ -1,0 +1,18 @@
+<h2>Atualizar Cidade</h2>
+
+<div *ngIf="request">
+    <label>Nome:
+        <input placeholder="Insira o nome" [(ngModel)]="request.nome">
+    </label>
+    <br>
+    <label>Estado:
+        <select *ngIf="responseEstados" [(ngModel)]="request.estadoId">
+            <option value='request.estadoId'>Selecione o Estado</option>
+            <option *ngFor="let estado of responseEstados.estados" [value]="estado._id">
+                {{ estado.nome }}
+            </option>
+        </select>
+    </label>
+    <br>
+    <button (click)="update()">Atualizar</button>
+</div>

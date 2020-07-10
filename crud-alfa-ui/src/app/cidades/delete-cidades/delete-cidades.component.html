@@ -1,0 +1,8 @@
+<h2>Apagar Cidade</h2>
+
+<div *ngIf="cidade">
+    <label><strong>Nome: {{cidade.nome}}</strong></label>
+    <br>
+    <button (click)="delete()">Apagar</button>
+    <button (click)="back()">voltar</button>
+</div>

@@ -1,0 +1,27 @@
+<h2>Cadastrar Cidades</h2>
+
+<div>
+    <label>Nome:
+        <input placeholder="Insira o nome" [(ngModel)]="request.nome">
+    </label>
+    <br>
+    <label>Estado:
+        <select *ngIf="responseEstados" [(ngModel)]="request.estadoId">
+            <option value=''>Selecione o Estado</option>
+            <option *ngFor="let estado of responseEstados.estados" [value]="estado._id">
+                {{ estado.nome }}
+            </option>
+        </select>
+    </label>
+    <br>
+    <button (click)="save()">Gravar</button>
+</div>
+
+<br><br>
+
+<div *ngIf="cidade">
+    <h3>Cidade criada com sucesso!</h3>
+    <label>Nome: {{ cidade.nome }}</label>
+    <br>
+    <label>Abreviação: {{ cidade.nomeEstado }}</label>
+</div>

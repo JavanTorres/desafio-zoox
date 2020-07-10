@@ -1,0 +1,10 @@
+<h2>Apagar Estado</h2>
+
+<div *ngIf="estado">
+    <label><strong>Nome: {{estado.nome}}</strong></label>
+    <br>
+    <label><strong>Abreviaçã: {{estado.abreviacao}}</strong></label>
+    <br>
+    <button (click)="delete()">Apagar</button>
+    <button (click)="back()">voltar</button>
+</div>

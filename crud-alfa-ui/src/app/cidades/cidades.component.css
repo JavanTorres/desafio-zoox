@@ -1,0 +1,17 @@
+.main {
+    width:100%;
+    height:100%;
+}
+
+table {
+  background-color: azure;
+  border-radius: 5px;
+  width: 100%;
+  left: 0;
+  top: 15px;
+}
+
+table thead {
+    background-color:gray;
+    
+}

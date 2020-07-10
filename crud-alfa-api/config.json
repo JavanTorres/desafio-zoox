@@ -1,0 +1,3 @@
+{
+    "urlConexaoMongoDB": "mongodb://localhost:27017/desafio_zoox_db"
+}

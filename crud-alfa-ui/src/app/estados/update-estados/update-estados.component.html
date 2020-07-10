@@ -1,0 +1,13 @@
+<h2>Atualizar Estado</h2>
+
+<div *ngIf="request">
+    <label>Nome:
+        <input placeholder="Insira o nome" [(ngModel)]="request.nome">
+    </label>
+    <br>
+    <label>Abreviação:
+        <input placeholder="Insira a Abreviação" [(ngModel)]="request.abreviacao">
+    </label>
+    <br>
+    <button (click)="update()">Atualizar</button>
+</div>

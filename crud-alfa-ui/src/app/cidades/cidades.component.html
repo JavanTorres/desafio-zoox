@@ -1,0 +1,18 @@
+<div class="main">
+    <h1 style="text-align: center;">Cidades</h1>
+    <table *ngIf="responseCidades">
+        <thead>
+            <td>Nome</td>
+            <td>Estado</td>
+            <td></td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cidade of responseCidades.cidades">
+                <td>{{cidade.nome}}</td>
+                <td>{{cidade.nomeEstado}}</td>
+                <td><a routerLink="/cidades/update/{{cidade._id}}">Editar</a> | 
+                <a routerLink="/cidades/delete/{{cidade._id}}">Remover</a></td> 
+            </tr>
+        </tbody>
+    </table>
+</div>
