@@ -20,7 +20,10 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\index.js"
+            "program": "${workspaceFolder}\\src\\server.js",
+            "env": {
+                "NODE_PORT_DEV": "3001",
+            },
         }
     ]
 }

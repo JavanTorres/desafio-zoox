@@ -1,3 +1,3 @@
 const app = require('./app');
 
-app.listen(process.env.NODE_ZOOX_PORT || 3000);
+app.listen(process.env.NODE_PORT_DEV || 3000);
